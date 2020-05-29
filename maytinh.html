@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>máy tính nâng cao</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/maytinh.css">
+</head>
+<body>
+<div id="calculator">
+    <input id="screen">
+    <br>
+    <div id="key">
+    <button onclick="clickNumber('(')">(</button>
+    <button onclick="clickNumber(')')">)</button>
+    <button id="percent" onclick="clickNumber('%')">%</button>
+    <button id="clear"  onclick="clearScreen()">AC</button>
+
+
+    <br>
+    <button  onclick="clickNumber(7)">7</button>
+    <button  onclick="clickNumber(8)">8</button>
+    <button  onclick="clickNumber(9)">9</button>
+    <button  onclick="clickNumber('+')">+</button>
+    <br>
+    <button  onclick="clickNumber(4)">4</button>
+    <button  onclick="clickNumber(5)">5</button>
+    <button  onclick="clickNumber(6)">6</button>
+    <button  onclick="clickNumber('-')">-</button>
+    <br>
+    <button onclick="clickNumber(1)">1</button>
+    <button onclick="clickNumber(2)">2</button>
+    <button onclick="clickNumber(3)">3</button>
+    <button onclick="clickNumber('*')">x</button>
+    <br>
+    <button id="delete"  onclick="deleteNumber()">CE</button>
+    <button  onclick="clickNumber(0)">0</button>
+    <button  onclick="clickNumber('.')">.</button>
+    <button  onclick="clickNumber('/')">/</button>
+    <button id="equal" onclick="calculator()" style="width: 200px; margin-left: 210px">=</button>
+
+    <br>
+    </div>
+</div>
+</body>
+<script src="../Jscript/maytinh.js"></script>
+</html>

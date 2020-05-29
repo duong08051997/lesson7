@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyển đổi tiền tệ</title>
+</head>
+<body>
+<form>
+    <form style="width: 600px">
+        <h4>AMOUNT</h4>
+        <input type="text" id="monney">&emsp;
+        <select id="from">
+            <option VALUE="1">USD</option>
+            <option value="23000">VND</option>
+            <option value="0.8">EU</option>
+        </select>
+        <select id="to">
+            <option VALUE="1">USD</option>
+            <option value="23000">VND</option>
+            <option value="0.8">EU</option>
+        </select>
+        <input type="button" value="resulf" onclick="f();">
+        <input type="text" id="resulf">
+    </form>
+    <script>
+
+        function f() {
+            let mon = parseFloat(document.getElementById('monney').value) ;
+            let from = parseFloat(document.getElementById('from').value);
+            let to = parseFloat(document.getElementById('to').value);
+            let resulf = (mon * to)/from
+            document.getElementById('resulf').value = resulf.toFixed(3);
+
+        }
+    </script>
+</form>
+</body>
+</html>
